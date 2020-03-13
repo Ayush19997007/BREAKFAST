@@ -1,0 +1,131 @@
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/grad"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:text="wanna café"
+            android:textAllCaps="true"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+        <EditText
+            android:id="@+id/yourName"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_below="@id/name"
+            android:textColor="#000000"
+            android:inputType="textCapWords"
+            android:hint="YOUR NAME"
+            android:textSize="40dp"/>
+
+        <TextView
+            android:id="@+id/quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/yourName"
+            android:layout_gravity="left"
+            android:padding="16dp"
+            android:text="TEA"
+            android:textAllCaps="true"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/plusbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/quantity"
+            android:onClick="increment"
+            android:paddingLeft="12dp"
+            android:text="+"
+            android:textSize="20dp"
+
+            />
+
+        <TextView
+            android:id="@+id/quantity_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/quantity"
+            android:layout_toRightOf="@id/plusbutton"
+            android:padding="16dp"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="25sp"
+
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/quantity"
+            android:layout_toRightOf="@id/quantity_text_view"
+            android:onClick="decrement"
+            android:padding="16dp"
+            android:text="-"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/quantity_text_view"
+            android:onClick="reset"
+            android:padding="16dp"
+
+            android:text="reset menu"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/icecream"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reset"
+            android:padding="10dp"
+            android:text="ICE CREAM"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/icecream"
+            android:text="WHIPPED CREAM TOPPING"
+            android:textColor="#FF4081"
+            android:textSize="20dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/checkbox1"
+            android:text="SPRINKLES TOPPING"
+            android:textColor="#FF4081"
+            android:textSize="20dp" />
+
+
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/checkbox2"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="70dp"
+            android:onClick="submitOrder"
+            android:padding="16dp"
+            android:text="ORDER"
+            android:textColor="#00C853"
+            android:textSize="30dp" />
+
+
+    </RelativeLayout>
